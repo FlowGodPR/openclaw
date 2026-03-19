@@ -1,0 +1,143 @@
+[
+  {
+    "id": "evol_1773944981_ea881717",
+    "name": "response_optimizer",
+    "description": "Optimizes response generation for speed and quality",
+    "evolution_type": "capability",
+    "created_at": "2026-03-19T14:29:41.793553",
+    "code_path": "/Volumes/QUINN/context/quinn_s3a/capabilities/response_optimizer.py",
+    "baseline_metrics": {
+      "response_time_ms": 0.0041961669921875,
+      "task_success_rate": 0.95,
+      "memory_efficiency": 0,
+      "code_quality_score": 8.5,
+      "learning_velocity": 0.8
+    },
+    "candidate_metrics": {
+      "response_time_ms": 0.0040870666503906245,
+      "task_success_rate": 0.9747,
+      "memory_efficiency": 0,
+      "code_quality_score": 8.721,
+      "learning_velocity": 0.8208000000000001
+    },
+    "improvement_score": 0.0104,
+    "status": "reverted",
+    "decision": "revert",
+    "test_results": [
+      {
+        "test": "unit_tests",
+        "passed": true,
+        "coverage": 0.92
+      },
+      {
+        "test": "integration_tests",
+        "passed": true,
+        "edge_cases_handled": 15
+      }
+    ]
+  },
+  {
+    "id": "evol_1773944981_ccd6b816",
+    "name": "event_driven_v2",
+    "description": "Add event bus for parallel processing",
+    "evolution_type": "architecture",
+    "created_at": "2026-03-19T14:29:41.821047",
+    "code_path": null,
+    "baseline_metrics": null,
+    "candidate_metrics": {
+      "response_time_ms": 0.0038604736328125,
+      "task_success_rate": 0.969,
+      "memory_efficiency": 0.0,
+      "code_quality_score": 8.585,
+      "learning_velocity": 0.8240000000000001
+    },
+    "improvement_score": -0.0039999999999999715,
+    "status": "reverted",
+    "decision": "revert",
+    "test_results": [
+      {
+        "test": "component_integration",
+        "passed": true,
+        "latency_ms": 12.5
+      },
+      {
+        "test": "data_flow_efficiency",
+        "passed": true,
+        "throughput_ops": 850
+      }
+    ]
+  },
+  {
+    "id": "evol_1773944981_6bb6601b",
+    "name": "cache_strategy",
+    "description": "Test LRU vs TTL cache strategies",
+    "evolution_type": "ab_test",
+    "created_at": "2026-03-19T14:29:41.829627",
+    "code_path": "/Volumes/QUINN/context/quinn_s3a/versions/cache_strategy",
+    "baseline_metrics": {
+      "response_time_ms": 28.333333333333332,
+      "task_success_rate": 1.0,
+      "memory_efficiency": 0.85,
+      "code_quality_score": 8.5,
+      "learning_velocity": 0.8
+    },
+    "candidate_metrics": {
+      "response_time_ms": 28.333333333333332,
+      "task_success_rate": 1.0,
+      "memory_efficiency": 0.85,
+      "code_quality_score": 8.5,
+      "learning_velocity": 0.8
+    },
+    "improvement_score": 0.0,
+    "status": "reverted",
+    "decision": "revert",
+    "test_results": [
+      {
+        "version": "A",
+        "results": [
+          {
+            "test_name": "cache_hit",
+            "passed": true,
+            "duration_ms": 5,
+            "output": ""
+          },
+          {
+            "test_name": "cache_miss",
+            "passed": true,
+            "duration_ms": 50,
+            "output": ""
+          },
+          {
+            "test_name": "cache_stale",
+            "passed": true,
+            "duration_ms": 30,
+            "output": ""
+          }
+        ]
+      },
+      {
+        "version": "B",
+        "results": [
+          {
+            "test_name": "cache_hit",
+            "passed": true,
+            "duration_ms": 5,
+            "output": ""
+          },
+          {
+            "test_name": "cache_miss",
+            "passed": true,
+            "duration_ms": 50,
+            "output": ""
+          },
+          {
+            "test_name": "cache_stale",
+            "passed": true,
+            "duration_ms": 30,
+            "output": ""
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "candidate_id": "evol_1773944981_ccd6b816",
+  "proposal": {
+    "components": [
+      "evolution_engine",
+      "memory",
+      "knowledge_base",
+      "event_bus"
+    ],
+    "patterns": [
+      "event_driven",
+      "component_based",
+      "async"
+    ],
+    "data_flow": "parallel"
+  },
+  "baseline_architecture": {
+    "components": [
+      "evolution_engine",
+      "memory",
+      "knowledge_base"
+    ],
+    "patterns": [
+      "event_driven",
+      "component_based"
+    ],
+    "data_flow": "sequential"
+  },
+  "timestamp": "2026-03-19T14:29:41.821052"
+}

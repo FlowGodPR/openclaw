@@ -1,0 +1,86 @@
+{
+  "last_wake": 1773953157.1735082,
+  "last_save": 1773953157.32527,
+  "action_count": 8,
+  "drives": [
+    {
+      "drive_type": "curiosity",
+      "intensity": 5.25,
+      "last_satisfied": 1773945042.6259289,
+      "trigger_count": 2,
+      "pending_goals": []
+    },
+    {
+      "drive_type": "helpfulness",
+      "intensity": 6.0,
+      "last_satisfied": 1773945040.088129,
+      "trigger_count": 4,
+      "pending_goals": []
+    },
+    {
+      "drive_type": "completion",
+      "intensity": 3.3499999999999996,
+      "last_satisfied": 1773953157.320904,
+      "trigger_count": 0,
+      "pending_goals": []
+    },
+    {
+      "drive_type": "learning",
+      "intensity": 5.9,
+      "last_satisfied": 1773945041.087239,
+      "trigger_count": 6,
+      "pending_goals": []
+    }
+  ],
+  "recent_goals": [
+    {
+      "id": "420b2f83",
+      "drive_type": "DriveType.COMPLETION",
+      "description": "Complete pending tasks and close open loops",
+      "priority": 6.35,
+      "created_at": 1773953157.2962382,
+      "context": {
+        "scan_type": "completion"
+      },
+      "status": "completed",
+      "outcome": "No open loops detected"
+    },
+    {
+      "id": "fcf204a9",
+      "drive_type": "DriveType.HELPFULNESS",
+      "description": "Check for user needs and provide assistance",
+      "priority": 6.0,
+      "created_at": 1773953157.293922,
+      "context": {
+        "scan_type": "helpfulness"
+      },
+      "status": "pending",
+      "outcome": null
+    },
+    {
+      "id": "e7711474",
+      "drive_type": "DriveType.LEARNING",
+      "description": "Document learnings and update knowledge base",
+      "priority": 5.7,
+      "created_at": 1773953157.298584,
+      "context": {
+        "scan_type": "learning"
+      },
+      "status": "pending",
+      "outcome": null
+    },
+    {
+      "id": "8a1fe1ff",
+      "drive_type": "DriveType.CURIOSITY",
+      "description": "Explore system state and discover something new",
+      "priority": 5.25,
+      "created_at": 1773953157.2917278,
+      "context": {
+        "scan_type": "curiosity"
+      },
+      "status": "pending",
+      "outcome": null
+    }
+  ],
+  "recent_initiatives": []
+}

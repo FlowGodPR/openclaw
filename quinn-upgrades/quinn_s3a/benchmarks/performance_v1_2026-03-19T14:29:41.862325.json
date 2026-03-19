@@ -1,0 +1,32 @@
+{
+  "benchmark_response": {
+    "timestamp": "2026-03-19T14:29:41.862315",
+    "test_name": "benchmark_response",
+    "duration_ms": 0.0,
+    "accuracy": 0.95,
+    "throughput": 100,
+    "memory_mb": 45,
+    "cpu_percent": 25,
+    "metadata": {}
+  },
+  "benchmark_memory": {
+    "timestamp": "2026-03-19T14:29:41.862320",
+    "test_name": "benchmark_memory",
+    "duration_ms": 0.0,
+    "accuracy": 0.88,
+    "throughput": 850,
+    "memory_mb": 52,
+    "cpu_percent": 25,
+    "metadata": {}
+  },
+  "benchmark_learning": {
+    "timestamp": "2026-03-19T14:29:41.862323",
+    "test_name": "benchmark_learning",
+    "duration_ms": 0.0,
+    "accuracy": 0.92,
+    "throughput": 120,
+    "memory_mb": 48,
+    "cpu_percent": 25,
+    "metadata": {}
+  }
+}
