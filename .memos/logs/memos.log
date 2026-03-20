@@ -1,0 +1,30 @@
+2026-03-20 06:40:15,413 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.mem_reader.read_multi_modal.utils - WARNING - utils.py:142 - <module> - [FileContentParser] Failed to create text splitter: Missing required module - 'langchain_text_splitters'
+💡 Install command: pip install langchain_text_splitters==1.0.0
+💡 Install guide:   https://github.com/langchain-ai/langchain-text-splitters
+ will use simple splitter fallback
+2026-03-20 06:40:15,986 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - WARNING - config.py:207 - init - missing NACOS_SERVER_ADDR / AK / SK / DATA_ID
+2026-03-20 06:40:15,986 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - INFO - config.py:181 - start_watch_if_enabled - NACOS_ENABLE_WATCH: False
+2026-03-20 06:40:29,536 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.mem_reader.read_multi_modal.utils - WARNING - utils.py:142 - <module> - [FileContentParser] Failed to create text splitter: Missing required module - 'langchain_text_splitters'
+💡 Install command: pip install langchain_text_splitters==1.0.0
+💡 Install guide:   https://github.com/langchain-ai/langchain-text-splitters
+ will use simple splitter fallback
+2026-03-20 06:40:30,102 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - WARNING - config.py:207 - init - missing NACOS_SERVER_ADDR / AK / SK / DATA_ID
+2026-03-20 06:40:30,102 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - INFO - config.py:181 - start_watch_if_enabled - NACOS_ENABLE_WATCH: False
+2026-03-20 06:41:07,859 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.mem_reader.read_multi_modal.utils - WARNING - utils.py:142 - <module> - [FileContentParser] Failed to create text splitter: Missing required module - 'langchain_text_splitters'
+💡 Install command: pip install langchain_text_splitters==1.0.0
+💡 Install guide:   https://github.com/langchain-ai/langchain-text-splitters
+ will use simple splitter fallback
+2026-03-20 06:41:08,413 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - WARNING - config.py:207 - init - missing NACOS_SERVER_ADDR / AK / SK / DATA_ID
+2026-03-20 06:41:08,413 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - INFO - config.py:181 - start_watch_if_enabled - NACOS_ENABLE_WATCH: False
+2026-03-20 06:41:40,420 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.mem_reader.read_multi_modal.utils - WARNING - utils.py:142 - <module> - [FileContentParser] Failed to create text splitter: Missing required module - 'langchain_text_splitters'
+💡 Install command: pip install langchain_text_splitters==1.0.0
+💡 Install guide:   https://github.com/langchain-ai/langchain-text-splitters
+ will use simple splitter fallback
+2026-03-20 06:41:40,975 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - WARNING - config.py:207 - init - missing NACOS_SERVER_ADDR / AK / SK / DATA_ID
+2026-03-20 06:41:40,975 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - INFO - config.py:181 - start_watch_if_enabled - NACOS_ENABLE_WATCH: False
+2026-03-20 06:41:55,166 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.mem_reader.read_multi_modal.utils - WARNING - utils.py:142 - <module> - [FileContentParser] Failed to create text splitter: Missing required module - 'langchain_text_splitters'
+💡 Install command: pip install langchain_text_splitters==1.0.0
+💡 Install guide:   https://github.com/langchain-ai/langchain-text-splitters
+ will use simple splitter fallback
+2026-03-20 06:41:55,720 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - WARNING - config.py:207 - init - missing NACOS_SERVER_ADDR / AK / SK / DATA_ID
+2026-03-20 06:41:55,720 | trace-id | path=None | env=prod | user_type=opensource | user_name=memos | memos.api.config - INFO - config.py:181 - start_watch_if_enabled - NACOS_ENABLE_WATCH: False

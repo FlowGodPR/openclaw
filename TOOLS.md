@@ -29,6 +29,15 @@ Things like:
 
 - Preferred voice: "Nova" (warm, slightly British)
 - Default speaker: Kitchen HomePod
+
+### Peekaboo (Screen Vision + Control)
+
+- **Script:** `/Volumes/QUINN/tools/peekaboo-control.sh`
+- **Vision:** `peekaboo-see` - Screenshot + UI analysis (469 elements detected)
+- **Mouse:** `peekaboo-click`, `peekaboo-move` - Click/type by element ID or coords
+- **Keyboard:** `peekaboo-type`, `peekaboo-press`, `peekaboo-hotkey`
+- **Permissions:** Screen Recording ✅, Accessibility ✅
+- **Always available:** Added to PATH + aliases in ~/.zshrc
 ```
 
 ## Why Separate?

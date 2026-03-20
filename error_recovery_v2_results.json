@@ -1,0 +1,7087 @@
+{
+  "error_log": [
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_0",
+      "action": "action_0",
+      "timestamp": 1774000647.9939,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_1",
+      "action": "action_1",
+      "timestamp": 1774000647.993909,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_2",
+      "timestamp": 1774000647.993917,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_3",
+      "timestamp": 1774000647.993922,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_4",
+      "timestamp": 1774000647.993928,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_5",
+      "timestamp": 1774000647.993935,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_6",
+      "timestamp": 1774000647.993941,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_7",
+      "timestamp": 1774000647.9939468,
+      "recovery_strategy": "use_alternative",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_8",
+      "action": "action_8",
+      "timestamp": 1774000647.99395,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_9",
+      "timestamp": 1774000647.993956,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_0",
+      "action": "action_10",
+      "timestamp": 1774000647.9939609,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_11",
+      "timestamp": 1774000647.993966,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_2",
+      "action": "action_12",
+      "timestamp": 1774000647.99397,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_13",
+      "timestamp": 1774000647.993975,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_14",
+      "timestamp": 1774000647.993977,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_5",
+      "action": "action_15",
+      "timestamp": 1774000647.99398,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_6",
+      "action": "action_16",
+      "timestamp": 1774000647.9939818,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_17",
+      "timestamp": 1774000647.993985,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_8",
+      "action": "action_18",
+      "timestamp": 1774000647.993987,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_19",
+      "timestamp": 1774000647.993991,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_0",
+      "action": "action_20",
+      "timestamp": 1774000647.993993,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_21",
+      "timestamp": 1774000647.9939961,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_22",
+      "timestamp": 1774000647.994,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_23",
+      "timestamp": 1774000647.994004,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_4",
+      "action": "action_24",
+      "timestamp": 1774000647.994007,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_25",
+      "timestamp": 1774000647.994011,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_26",
+      "timestamp": 1774000647.994015,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_27",
+      "timestamp": 1774000647.994019,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 2,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_28",
+      "timestamp": 1774000647.994022,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_29",
+      "timestamp": 1774000647.994026,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_30",
+      "timestamp": 1774000647.99403,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_1",
+      "action": "action_31",
+      "timestamp": 1774000647.9940329,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_32",
+      "timestamp": 1774000647.994037,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_33",
+      "timestamp": 1774000647.9940412,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_4",
+      "action": "action_34",
+      "timestamp": 1774000647.9940438,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_35",
+      "timestamp": 1774000647.994048,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_36",
+      "timestamp": 1774000647.994051,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_7",
+      "action": "action_37",
+      "timestamp": 1774000647.9940538,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_38",
+      "timestamp": 1774000647.994061,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_9",
+      "action": "action_39",
+      "timestamp": 1774000647.9940648,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_40",
+      "timestamp": 1774000647.99407,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_1",
+      "action": "action_41",
+      "timestamp": 1774000647.994072,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_2",
+      "action": "action_42",
+      "timestamp": 1774000647.9940748,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_3",
+      "action": "action_43",
+      "timestamp": 1774000647.994077,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_44",
+      "timestamp": 1774000647.994081,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_45",
+      "timestamp": 1774000647.994085,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 2,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_46",
+      "timestamp": 1774000647.994089,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_7",
+      "action": "action_47",
+      "timestamp": 1774000647.994091,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_8",
+      "action": "action_48",
+      "timestamp": 1774000647.994095,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_9",
+      "action": "action_49",
+      "timestamp": 1774000647.994098,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_50",
+      "timestamp": 1774000647.994102,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_1",
+      "action": "action_51",
+      "timestamp": 1774000647.994105,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_2",
+      "action": "action_52",
+      "timestamp": 1774000647.994109,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_53",
+      "timestamp": 1774000647.994113,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_54",
+      "timestamp": 1774000647.994117,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_55",
+      "timestamp": 1774000647.994122,
+      "recovery_strategy": "use_alternative",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_6",
+      "action": "action_56",
+      "timestamp": 1774000647.9941251,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_7",
+      "action": "action_57",
+      "timestamp": 1774000647.994127,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_58",
+      "timestamp": 1774000647.9941308,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_59",
+      "timestamp": 1774000647.9941351,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_60",
+      "timestamp": 1774000647.99414,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_1",
+      "action": "action_61",
+      "timestamp": 1774000647.994143,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_62",
+      "timestamp": 1774000647.994147,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_63",
+      "timestamp": 1774000647.9941509,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_64",
+      "timestamp": 1774000647.994155,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_65",
+      "timestamp": 1774000647.9941592,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_66",
+      "timestamp": 1774000647.994163,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_67",
+      "timestamp": 1774000647.994168,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_68",
+      "timestamp": 1774000647.9941719,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_69",
+      "timestamp": 1774000647.994176,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_0",
+      "action": "action_70",
+      "timestamp": 1774000647.9941802,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_71",
+      "timestamp": 1774000647.994184,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_2",
+      "action": "action_72",
+      "timestamp": 1774000647.994188,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_73",
+      "timestamp": 1774000647.994192,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_74",
+      "timestamp": 1774000647.994196,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_5",
+      "action": "action_75",
+      "timestamp": 1774000647.994199,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_76",
+      "timestamp": 1774000647.9942029,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_77",
+      "timestamp": 1774000647.994208,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_8",
+      "action": "action_78",
+      "timestamp": 1774000647.994211,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_9",
+      "action": "action_79",
+      "timestamp": 1774000647.994215,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_80",
+      "timestamp": 1774000647.994219,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_81",
+      "timestamp": 1774000647.994224,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_82",
+      "timestamp": 1774000647.994228,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_83",
+      "timestamp": 1774000647.9942331,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_4",
+      "action": "action_84",
+      "timestamp": 1774000647.994236,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_85",
+      "timestamp": 1774000647.994241,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_86",
+      "timestamp": 1774000647.994246,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_87",
+      "timestamp": 1774000647.99425,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_88",
+      "timestamp": 1774000647.994255,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_89",
+      "timestamp": 1774000647.9942589,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_0",
+      "action": "action_90",
+      "timestamp": 1774000647.994263,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_91",
+      "timestamp": 1774000647.994268,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_92",
+      "timestamp": 1774000647.994272,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_93",
+      "timestamp": 1774000647.9942772,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_4",
+      "action": "action_94",
+      "timestamp": 1774000647.994285,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_95",
+      "timestamp": 1774000647.9942899,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_96",
+      "timestamp": 1774000647.994294,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_7",
+      "action": "action_97",
+      "timestamp": 1774000647.9942982,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_98",
+      "timestamp": 1774000647.994302,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_99",
+      "timestamp": 1774000647.994307,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_100",
+      "timestamp": 1774000647.9943109,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_1",
+      "action": "action_101",
+      "timestamp": 1774000647.994315,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_102",
+      "timestamp": 1774000647.99432,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_103",
+      "timestamp": 1774000647.994326,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_104",
+      "timestamp": 1774000647.9943302,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_105",
+      "timestamp": 1774000647.994335,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 2,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_106",
+      "timestamp": 1774000647.9943428,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_7",
+      "action": "action_107",
+      "timestamp": 1774000647.994347,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_108",
+      "timestamp": 1774000647.994352,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_9",
+      "action": "action_109",
+      "timestamp": 1774000647.994355,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_0",
+      "action": "action_110",
+      "timestamp": 1774000647.99436,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_111",
+      "timestamp": 1774000647.994365,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_112",
+      "timestamp": 1774000647.99437,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_113",
+      "timestamp": 1774000647.9943738,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_114",
+      "timestamp": 1774000647.994379,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_5",
+      "action": "action_115",
+      "timestamp": 1774000647.9943838,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_116",
+      "timestamp": 1774000647.9943879,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_117",
+      "timestamp": 1774000647.994393,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_118",
+      "timestamp": 1774000647.9943979,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_119",
+      "timestamp": 1774000647.9944031,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_120",
+      "timestamp": 1774000647.994408,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_1",
+      "action": "action_121",
+      "timestamp": 1774000647.994415,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_2",
+      "action": "action_122",
+      "timestamp": 1774000647.99442,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_123",
+      "timestamp": 1774000647.994428,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_124",
+      "timestamp": 1774000647.994432,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_5",
+      "action": "action_125",
+      "timestamp": 1774000647.994436,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_6",
+      "action": "action_126",
+      "timestamp": 1774000647.994439,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_127",
+      "timestamp": 1774000647.9944441,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_8",
+      "action": "action_128",
+      "timestamp": 1774000647.994448,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_129",
+      "timestamp": 1774000647.994453,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_130",
+      "timestamp": 1774000647.994456,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_131",
+      "timestamp": 1774000647.994462,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_132",
+      "timestamp": 1774000647.994466,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_133",
+      "timestamp": 1774000647.994472,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_134",
+      "timestamp": 1774000647.9944792,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_135",
+      "timestamp": 1774000647.994485,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_136",
+      "timestamp": 1774000647.9944918,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_137",
+      "timestamp": 1774000647.994499,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_138",
+      "timestamp": 1774000647.994505,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_139",
+      "timestamp": 1774000647.9945118,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_140",
+      "timestamp": 1774000647.994519,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_141",
+      "timestamp": 1774000647.994524,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_142",
+      "timestamp": 1774000647.99453,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_143",
+      "timestamp": 1774000647.9945338,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_144",
+      "timestamp": 1774000647.9945369,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_5",
+      "action": "action_145",
+      "timestamp": 1774000647.9945421,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_146",
+      "timestamp": 1774000647.994547,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_7",
+      "action": "action_147",
+      "timestamp": 1774000647.99455,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_148",
+      "timestamp": 1774000647.994554,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_149",
+      "timestamp": 1774000647.994559,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_150",
+      "timestamp": 1774000647.994563,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_1",
+      "action": "action_151",
+      "timestamp": 1774000647.994567,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_152",
+      "timestamp": 1774000647.994571,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_3",
+      "action": "action_153",
+      "timestamp": 1774000647.994575,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_4",
+      "action": "action_154",
+      "timestamp": 1774000647.9945788,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_5",
+      "action": "action_155",
+      "timestamp": 1774000647.9945831,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_156",
+      "timestamp": 1774000647.994587,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_7",
+      "action": "action_157",
+      "timestamp": 1774000647.994591,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_8",
+      "action": "action_158",
+      "timestamp": 1774000647.994594,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_9",
+      "action": "action_159",
+      "timestamp": 1774000647.9945972,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_160",
+      "timestamp": 1774000647.994602,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_161",
+      "timestamp": 1774000647.9946072,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_162",
+      "timestamp": 1774000647.994612,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_3",
+      "action": "action_163",
+      "timestamp": 1774000647.994617,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_164",
+      "timestamp": 1774000647.994621,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_165",
+      "timestamp": 1774000647.9946291,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_166",
+      "timestamp": 1774000647.994636,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_167",
+      "timestamp": 1774000647.994642,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_168",
+      "timestamp": 1774000647.9946492,
+      "recovery_strategy": "use_alternative",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_9",
+      "action": "action_169",
+      "timestamp": 1774000647.994655,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_0",
+      "action": "action_170",
+      "timestamp": 1774000647.9946601,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_171",
+      "timestamp": 1774000647.994666,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_172",
+      "timestamp": 1774000647.994671,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_173",
+      "timestamp": 1774000647.994684,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_174",
+      "timestamp": 1774000647.994689,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_175",
+      "timestamp": 1774000647.994693,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_176",
+      "timestamp": 1774000647.994699,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_177",
+      "timestamp": 1774000647.994703,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_8",
+      "action": "action_178",
+      "timestamp": 1774000647.9947069,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_179",
+      "timestamp": 1774000647.994712,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_0",
+      "action": "action_180",
+      "timestamp": 1774000647.994716,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_1",
+      "action": "action_181",
+      "timestamp": 1774000647.99472,
+      "recovery_strategy": "drain_queue",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_182",
+      "timestamp": 1774000647.994726,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_183",
+      "timestamp": 1774000647.994731,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_184",
+      "timestamp": 1774000647.9947362,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_185",
+      "timestamp": 1774000647.994741,
+      "recovery_strategy": "use_alternative",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_6",
+      "action": "action_186",
+      "timestamp": 1774000647.994744,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_7",
+      "action": "action_187",
+      "timestamp": 1774000647.9947479,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_188",
+      "timestamp": 1774000647.9947531,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_189",
+      "timestamp": 1774000647.994758,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_0",
+      "action": "action_190",
+      "timestamp": 1774000647.994763,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_191",
+      "timestamp": 1774000647.9947672,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_192",
+      "timestamp": 1774000647.994772,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_193",
+      "timestamp": 1774000647.9947772,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_194",
+      "timestamp": 1774000647.9947798,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_5",
+      "action": "action_195",
+      "timestamp": 1774000647.994784,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_196",
+      "timestamp": 1774000647.9947882,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_7",
+      "action": "action_197",
+      "timestamp": 1774000647.994792,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_198",
+      "timestamp": 1774000647.994797,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_199",
+      "timestamp": 1774000647.994802,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_0",
+      "action": "action_200",
+      "timestamp": 1774000647.994807,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_201",
+      "timestamp": 1774000647.994812,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_2",
+      "action": "action_202",
+      "timestamp": 1774000647.9948149,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_203",
+      "timestamp": 1774000647.99482,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_204",
+      "timestamp": 1774000647.994824,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_205",
+      "timestamp": 1774000647.994829,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_6",
+      "action": "action_206",
+      "timestamp": 1774000647.994833,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_7",
+      "action": "action_207",
+      "timestamp": 1774000647.994837,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_208",
+      "timestamp": 1774000647.994842,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_209",
+      "timestamp": 1774000647.994847,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_0",
+      "action": "action_210",
+      "timestamp": 1774000647.9948502,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_1",
+      "action": "action_211",
+      "timestamp": 1774000647.994853,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_212",
+      "timestamp": 1774000647.994858,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_213",
+      "timestamp": 1774000647.994862,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_214",
+      "timestamp": 1774000647.9948668,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_215",
+      "timestamp": 1774000647.994872,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_216",
+      "timestamp": 1774000647.9948769,
+      "recovery_strategy": "use_alternative",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_217",
+      "timestamp": 1774000647.994882,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_218",
+      "timestamp": 1774000647.994886,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_219",
+      "timestamp": 1774000647.994891,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_220",
+      "timestamp": 1774000647.994894,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_1",
+      "action": "action_221",
+      "timestamp": 1774000647.994899,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_222",
+      "timestamp": 1774000647.994903,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_223",
+      "timestamp": 1774000647.9949079,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_224",
+      "timestamp": 1774000647.994912,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_225",
+      "timestamp": 1774000647.9949172,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_6",
+      "action": "action_226",
+      "timestamp": 1774000647.994921,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_227",
+      "timestamp": 1774000647.994926,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_228",
+      "timestamp": 1774000647.99493,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_229",
+      "timestamp": 1774000647.994935,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_230",
+      "timestamp": 1774000647.9949381,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_231",
+      "timestamp": 1774000647.994943,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_232",
+      "timestamp": 1774000647.9949481,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 2,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_233",
+      "timestamp": 1774000647.994953,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_234",
+      "timestamp": 1774000647.994957,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_235",
+      "timestamp": 1774000647.994962,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_6",
+      "action": "action_236",
+      "timestamp": 1774000647.994965,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_237",
+      "timestamp": 1774000647.99497,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_238",
+      "timestamp": 1774000647.994975,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_9",
+      "action": "action_239",
+      "timestamp": 1774000647.994978,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_240",
+      "timestamp": 1774000647.994982,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_241",
+      "timestamp": 1774000647.994986,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_242",
+      "timestamp": 1774000647.9949949,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_243",
+      "timestamp": 1774000647.9950001,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_244",
+      "timestamp": 1774000647.995005,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_245",
+      "timestamp": 1774000647.9950101,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_246",
+      "timestamp": 1774000647.995014,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_247",
+      "timestamp": 1774000647.995019,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_8",
+      "action": "action_248",
+      "timestamp": 1774000647.995023,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_249",
+      "timestamp": 1774000647.995028,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_0",
+      "action": "action_250",
+      "timestamp": 1774000647.995032,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_1",
+      "action": "action_251",
+      "timestamp": 1774000647.995035,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_252",
+      "timestamp": 1774000647.9950411,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_253",
+      "timestamp": 1774000647.9950452,
+      "recovery_strategy": "use_alternative",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_254",
+      "timestamp": 1774000647.995048,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_255",
+      "timestamp": 1774000647.995053,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_256",
+      "timestamp": 1774000647.9950578,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_7",
+      "action": "action_257",
+      "timestamp": 1774000647.995061,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_258",
+      "timestamp": 1774000647.9950662,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_259",
+      "timestamp": 1774000647.9950778,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_260",
+      "timestamp": 1774000647.995083,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_1",
+      "action": "action_261",
+      "timestamp": 1774000647.9950871,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_2",
+      "action": "action_262",
+      "timestamp": 1774000647.995092,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_263",
+      "timestamp": 1774000647.995096,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_264",
+      "timestamp": 1774000647.9951,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_5",
+      "action": "action_265",
+      "timestamp": 1774000647.995104,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_6",
+      "action": "action_266",
+      "timestamp": 1774000647.9951081,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_7",
+      "action": "action_267",
+      "timestamp": 1774000647.995112,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_8",
+      "action": "action_268",
+      "timestamp": 1774000647.995116,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_9",
+      "action": "action_269",
+      "timestamp": 1774000647.99512,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_0",
+      "action": "action_270",
+      "timestamp": 1774000647.9951239,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_271",
+      "timestamp": 1774000647.995129,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_272",
+      "timestamp": 1774000647.9951339,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_273",
+      "timestamp": 1774000647.9951391,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_274",
+      "timestamp": 1774000647.995142,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_275",
+      "timestamp": 1774000647.995147,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_6",
+      "action": "action_276",
+      "timestamp": 1774000647.995151,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_7",
+      "action": "action_277",
+      "timestamp": 1774000647.995154,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_8",
+      "action": "action_278",
+      "timestamp": 1774000647.995161,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_9",
+      "action": "action_279",
+      "timestamp": 1774000647.9951649,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_0",
+      "action": "action_280",
+      "timestamp": 1774000647.995168,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_281",
+      "timestamp": 1774000647.9951732,
+      "recovery_strategy": "use_alternative",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_2",
+      "action": "action_282",
+      "timestamp": 1774000647.995177,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_283",
+      "timestamp": 1774000647.995182,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_4",
+      "action": "action_284",
+      "timestamp": 1774000647.9951859,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_285",
+      "timestamp": 1774000647.995191,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_6",
+      "action": "action_286",
+      "timestamp": 1774000647.9951942,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_287",
+      "timestamp": 1774000647.995199,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_288",
+      "timestamp": 1774000647.995203,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_9",
+      "action": "action_289",
+      "timestamp": 1774000647.9952068,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_290",
+      "timestamp": 1774000647.995212,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_291",
+      "timestamp": 1774000647.9952168,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_292",
+      "timestamp": 1774000647.995222,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_293",
+      "timestamp": 1774000647.995231,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_294",
+      "timestamp": 1774000647.995235,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_295",
+      "timestamp": 1774000647.995245,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_296",
+      "timestamp": 1774000647.99525,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_297",
+      "timestamp": 1774000647.995255,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_298",
+      "timestamp": 1774000647.99526,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_9",
+      "action": "action_299",
+      "timestamp": 1774000647.9952629,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_0",
+      "action": "action_300",
+      "timestamp": 1774000647.9952672,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_1",
+      "action": "action_301",
+      "timestamp": 1774000647.995271,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_302",
+      "timestamp": 1774000647.995275,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_3",
+      "action": "action_303",
+      "timestamp": 1774000647.9952798,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_304",
+      "timestamp": 1774000647.995284,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_5",
+      "action": "action_305",
+      "timestamp": 1774000647.995289,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_306",
+      "timestamp": 1774000647.9952939,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_7",
+      "action": "action_307",
+      "timestamp": 1774000647.995297,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_8",
+      "action": "action_308",
+      "timestamp": 1774000647.995301,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_309",
+      "timestamp": 1774000647.995306,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_310",
+      "timestamp": 1774000647.995311,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_311",
+      "timestamp": 1774000647.9953148,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_312",
+      "timestamp": 1774000647.995328,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_3",
+      "action": "action_313",
+      "timestamp": 1774000647.995332,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_314",
+      "timestamp": 1774000647.995337,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_5",
+      "action": "action_315",
+      "timestamp": 1774000647.99534,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_6",
+      "action": "action_316",
+      "timestamp": 1774000647.995344,
+      "recovery_strategy": "drain_queue",
+      "success": false,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_7",
+      "action": "action_317",
+      "timestamp": 1774000647.995348,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_8",
+      "action": "action_318",
+      "timestamp": 1774000647.995353,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_319",
+      "timestamp": 1774000647.995357,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_0",
+      "action": "action_320",
+      "timestamp": 1774000647.995362,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_321",
+      "timestamp": 1774000647.9953659,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_322",
+      "timestamp": 1774000647.995371,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_323",
+      "timestamp": 1774000647.995378,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_324",
+      "timestamp": 1774000647.995384,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_5",
+      "action": "action_325",
+      "timestamp": 1774000647.99539,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_326",
+      "timestamp": 1774000647.9953961,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_327",
+      "timestamp": 1774000647.995403,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_328",
+      "timestamp": 1774000647.995409,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_329",
+      "timestamp": 1774000647.9954162,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_330",
+      "timestamp": 1774000647.995423,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_331",
+      "timestamp": 1774000647.995428,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_332",
+      "timestamp": 1774000647.9954329,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_3",
+      "action": "action_333",
+      "timestamp": 1774000647.995436,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_334",
+      "timestamp": 1774000647.995441,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_5",
+      "action": "action_335",
+      "timestamp": 1774000647.995446,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_336",
+      "timestamp": 1774000647.995451,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_7",
+      "action": "action_337",
+      "timestamp": 1774000647.995455,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_8",
+      "action": "action_338",
+      "timestamp": 1774000647.99546,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_339",
+      "timestamp": 1774000647.995467,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_340",
+      "timestamp": 1774000647.9954739,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_341",
+      "timestamp": 1774000647.995481,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_2",
+      "action": "action_342",
+      "timestamp": 1774000647.995487,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_343",
+      "timestamp": 1774000647.9954932,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_344",
+      "timestamp": 1774000647.9955,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_345",
+      "timestamp": 1774000647.9955058,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_346",
+      "timestamp": 1774000647.9955142,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_7",
+      "action": "action_347",
+      "timestamp": 1774000647.995518,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_348",
+      "timestamp": 1774000647.9955251,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_9",
+      "action": "action_349",
+      "timestamp": 1774000647.99553,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_350",
+      "timestamp": 1774000647.9955351,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_351",
+      "timestamp": 1774000647.99554,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_352",
+      "timestamp": 1774000647.9955451,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 2,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_3",
+      "action": "action_353",
+      "timestamp": 1774000647.99555,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_354",
+      "timestamp": 1774000647.995556,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_355",
+      "timestamp": 1774000647.995563,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_356",
+      "timestamp": 1774000647.995569,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_7",
+      "action": "action_357",
+      "timestamp": 1774000647.995574,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_8",
+      "action": "action_358",
+      "timestamp": 1774000647.9955788,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_9",
+      "action": "action_359",
+      "timestamp": 1774000647.995585,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_360",
+      "timestamp": 1774000647.9955919,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_361",
+      "timestamp": 1774000647.995598,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_362",
+      "timestamp": 1774000647.9956028,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_363",
+      "timestamp": 1774000647.99561,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_4",
+      "action": "action_364",
+      "timestamp": 1774000647.995615,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_365",
+      "timestamp": 1774000647.995622,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_366",
+      "timestamp": 1774000647.995627,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_367",
+      "timestamp": 1774000647.995633,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_368",
+      "timestamp": 1774000647.99564,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_369",
+      "timestamp": 1774000647.995647,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_0",
+      "action": "action_370",
+      "timestamp": 1774000647.9956532,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_371",
+      "timestamp": 1774000647.99566,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_372",
+      "timestamp": 1774000647.995666,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_3",
+      "action": "action_373",
+      "timestamp": 1774000647.995672,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_4",
+      "action": "action_374",
+      "timestamp": 1774000647.995677,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_5",
+      "action": "action_375",
+      "timestamp": 1774000647.995682,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_376",
+      "timestamp": 1774000647.995688,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_377",
+      "timestamp": 1774000647.995695,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_378",
+      "timestamp": 1774000647.995701,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_379",
+      "timestamp": 1774000647.9957068,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_0",
+      "action": "action_380",
+      "timestamp": 1774000647.995713,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_381",
+      "timestamp": 1774000647.995718,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_2",
+      "action": "action_382",
+      "timestamp": 1774000647.995723,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_383",
+      "timestamp": 1774000647.99573,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_384",
+      "timestamp": 1774000647.995737,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_385",
+      "timestamp": 1774000647.995743,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_386",
+      "timestamp": 1774000647.99575,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_387",
+      "timestamp": 1774000647.995757,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_8",
+      "action": "action_388",
+      "timestamp": 1774000647.9957619,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_389",
+      "timestamp": 1774000647.995768,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_390",
+      "timestamp": 1774000647.995774,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_1",
+      "action": "action_391",
+      "timestamp": 1774000647.995779,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_392",
+      "timestamp": 1774000647.995786,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_393",
+      "timestamp": 1774000647.9957929,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_4",
+      "action": "action_394",
+      "timestamp": 1774000647.995799,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_395",
+      "timestamp": 1774000647.995805,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_396",
+      "timestamp": 1774000647.9958122,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_397",
+      "timestamp": 1774000647.995819,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_398",
+      "timestamp": 1774000647.9958248,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_399",
+      "timestamp": 1774000647.9958332,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_0",
+      "action": "action_400",
+      "timestamp": 1774000647.995838,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_401",
+      "timestamp": 1774000647.995845,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_2",
+      "action": "action_402",
+      "timestamp": 1774000647.99585,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_403",
+      "timestamp": 1774000647.995857,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_404",
+      "timestamp": 1774000647.995862,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_405",
+      "timestamp": 1774000647.995868,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_6",
+      "action": "action_406",
+      "timestamp": 1774000647.9958742,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_407",
+      "timestamp": 1774000647.9958808,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_8",
+      "action": "action_408",
+      "timestamp": 1774000647.995886,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_409",
+      "timestamp": 1774000647.995892,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_410",
+      "timestamp": 1774000647.995897,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_1",
+      "action": "action_411",
+      "timestamp": 1774000647.995902,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_412",
+      "timestamp": 1774000647.995908,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_413",
+      "timestamp": 1774000647.995914,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_414",
+      "timestamp": 1774000647.995921,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_5",
+      "action": "action_415",
+      "timestamp": 1774000647.995927,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_6",
+      "action": "action_416",
+      "timestamp": 1774000647.995931,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_417",
+      "timestamp": 1774000647.995938,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_8",
+      "action": "action_418",
+      "timestamp": 1774000647.9959428,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_9",
+      "action": "action_419",
+      "timestamp": 1774000647.9959471,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_0",
+      "action": "action_420",
+      "timestamp": 1774000647.9959512,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_1",
+      "action": "action_421",
+      "timestamp": 1774000647.995957,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_2",
+      "action": "action_422",
+      "timestamp": 1774000647.9959629,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_423",
+      "timestamp": 1774000647.995969,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_424",
+      "timestamp": 1774000647.995975,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_5",
+      "action": "action_425",
+      "timestamp": 1774000647.99598,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_426",
+      "timestamp": 1774000647.995987,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_427",
+      "timestamp": 1774000647.995994,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_8",
+      "action": "action_428",
+      "timestamp": 1774000647.995998,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_9",
+      "action": "action_429",
+      "timestamp": 1774000647.9960032,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_430",
+      "timestamp": 1774000647.996008,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_431",
+      "timestamp": 1774000647.996014,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_2",
+      "action": "action_432",
+      "timestamp": 1774000647.996019,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_433",
+      "timestamp": 1774000647.996025,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_434",
+      "timestamp": 1774000647.996031,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_5",
+      "action": "action_435",
+      "timestamp": 1774000647.996037,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_436",
+      "timestamp": 1774000647.996044,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_7",
+      "action": "action_437",
+      "timestamp": 1774000647.996049,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_8",
+      "action": "action_438",
+      "timestamp": 1774000647.996054,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_9",
+      "action": "action_439",
+      "timestamp": 1774000647.996059,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_440",
+      "timestamp": 1774000647.996066,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_1",
+      "action": "action_441",
+      "timestamp": 1774000647.996072,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_442",
+      "timestamp": 1774000647.9960792,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_443",
+      "timestamp": 1774000647.996085,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 2,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_444",
+      "timestamp": 1774000647.9960918,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_445",
+      "timestamp": 1774000647.996099,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_6",
+      "action": "action_446",
+      "timestamp": 1774000647.996105,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_7",
+      "action": "action_447",
+      "timestamp": 1774000647.9961112,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_448",
+      "timestamp": 1774000647.996118,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_9",
+      "action": "action_449",
+      "timestamp": 1774000647.9961221,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_0",
+      "action": "action_450",
+      "timestamp": 1774000647.996128,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_1",
+      "action": "action_451",
+      "timestamp": 1774000647.9961338,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_452",
+      "timestamp": 1774000647.99614,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_3",
+      "action": "action_453",
+      "timestamp": 1774000647.996145,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_454",
+      "timestamp": 1774000647.996151,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_455",
+      "timestamp": 1774000647.996158,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_6",
+      "action": "action_456",
+      "timestamp": 1774000647.996164,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_457",
+      "timestamp": 1774000647.99617,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_8",
+      "action": "action_458",
+      "timestamp": 1774000647.9961758,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_9",
+      "action": "action_459",
+      "timestamp": 1774000647.996181,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_0",
+      "action": "action_460",
+      "timestamp": 1774000647.996187,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_461",
+      "timestamp": 1774000647.9961941,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_462",
+      "timestamp": 1774000647.9961998,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_3",
+      "action": "action_463",
+      "timestamp": 1774000647.996205,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_4",
+      "action": "action_464",
+      "timestamp": 1774000647.996212,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_5",
+      "action": "action_465",
+      "timestamp": 1774000647.996217,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_6",
+      "action": "action_466",
+      "timestamp": 1774000647.9962208,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_7",
+      "action": "action_467",
+      "timestamp": 1774000647.996228,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "ABORT",
+      "context": "context_8",
+      "action": "action_468",
+      "timestamp": 1774000647.996232,
+      "recovery_strategy": "safe_abort",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: critical failure - unrecoverable",
+        "Policy: ABORT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_469",
+      "timestamp": 1774000647.996238,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_0",
+      "action": "action_470",
+      "timestamp": 1774000647.996243,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_471",
+      "timestamp": 1774000647.9962502,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: peekaboo timeout",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_2",
+      "action": "action_472",
+      "timestamp": 1774000647.996256,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_473",
+      "timestamp": 1774000647.9962618,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_4",
+      "action": "action_474",
+      "timestamp": 1774000647.996267,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_475",
+      "timestamp": 1774000647.996274,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_476",
+      "timestamp": 1774000647.9962811,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_7",
+      "action": "action_477",
+      "timestamp": 1774000647.996286,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_8",
+      "action": "action_478",
+      "timestamp": 1774000647.996292,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_9",
+      "action": "action_479",
+      "timestamp": 1774000647.996299,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_480",
+      "timestamp": 1774000647.9963038,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_1",
+      "action": "action_481",
+      "timestamp": 1774000647.99631,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_482",
+      "timestamp": 1774000647.996316,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_3",
+      "action": "action_483",
+      "timestamp": 1774000647.996323,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_484",
+      "timestamp": 1774000647.996329,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_485",
+      "timestamp": 1774000647.996335,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "COMPACT",
+      "context": "context_6",
+      "action": "action_486",
+      "timestamp": 1774000647.99634,
+      "recovery_strategy": "compact_state",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: repeated timeout",
+        "Policy: COMPACT"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "DRAIN",
+      "context": "context_7",
+      "action": "action_487",
+      "timestamp": 1774000647.996346,
+      "recovery_strategy": "drain_queue",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: queue_full - buffer exceeded",
+        "Policy: DRAIN"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_488",
+      "timestamp": 1774000647.996352,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: allocation failed",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_489",
+      "timestamp": 1774000647.9963589,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FLUSH",
+      "context": "context_0",
+      "action": "action_490",
+      "timestamp": 1774000647.996364,
+      "recovery_strategy": "flush_and_reset",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: corrupted state - invalid checksum",
+        "Policy: FLUSH"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_1",
+      "action": "action_491",
+      "timestamp": 1774000647.996371,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_2",
+      "action": "action_492",
+      "timestamp": 1774000647.996377,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: temporary busy",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_3",
+      "action": "action_493",
+      "timestamp": 1774000647.996384,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_4",
+      "action": "action_494",
+      "timestamp": 1774000647.9963899,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "unknown",
+      "policy_type": "FALLBACK",
+      "context": "context_5",
+      "action": "action_495",
+      "timestamp": 1774000647.996396,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: element not found",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_6",
+      "action": "action_496",
+      "timestamp": 1774000647.996403,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "transient",
+      "policy_type": "RETRY",
+      "context": "context_7",
+      "action": "action_497",
+      "timestamp": 1774000647.9964092,
+      "recovery_strategy": "retry_with_backoff",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: api_error - rate limit",
+        "Policy: RETRY"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_8",
+      "action": "action_498",
+      "timestamp": 1774000647.996416,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: permission_denied",
+        "Policy: FALLBACK"
+      ]
+    },
+    {
+      "error_type": "permanent",
+      "policy_type": "FALLBACK",
+      "context": "context_9",
+      "action": "action_499",
+      "timestamp": 1774000647.9964218,
+      "recovery_strategy": "use_alternative",
+      "success": true,
+      "attempts": 1,
+      "lessons_learned": [
+        "Error pattern: click_failed - not interactable",
+        "Policy: FALLBACK"
+      ]
+    }
+  ],
+  "success_rate": 1.0,
+  "policies": {
+    "RETRY": {
+      "policy_type": "retry",
+      "error_pattern": "transient",
+      "max_retries": 3,
+      "retry_delay": 1.0,
+      "fallback_action": "retry_with_backoff",
+      "escalate_if": "exhausted_retries"
+    },
+    "FALLBACK": {
+      "policy_type": "fallback",
+      "error_pattern": "permanent",
+      "max_retries": 1,
+      "retry_delay": 0.0,
+      "fallback_action": "use_alternative",
+      "escalate_if": "no_fallback_available"
+    },
+    "COMPACT": {
+      "policy_type": "compact",
+      "error_pattern": "repeated",
+      "max_retries": 2,
+      "retry_delay": 0.5,
+      "fallback_action": "compact_state",
+      "escalate_if": "compaction_fails"
+    },
+    "DRAIN": {
+      "policy_type": "drain",
+      "error_pattern": "queue_full",
+      "max_retries": 1,
+      "retry_delay": 0.0,
+      "fallback_action": "drain_queue",
+      "escalate_if": "drain_timeout"
+    },
+    "ABORT": {
+      "policy_type": "abort",
+      "error_pattern": "critical",
+      "max_retries": 0,
+      "retry_delay": 0.0,
+      "fallback_action": "safe_abort",
+      "escalate_if": "cleanup_fails"
+    },
+    "FLUSH": {
+      "policy_type": "flush",
+      "error_pattern": "corrupted",
+      "max_retries": 1,
+      "retry_delay": 0.0,
+      "fallback_action": "flush_and_reset",
+      "escalate_if": "flush_fails"
+    }
+  },
+  "circuit_breakers": {
+    "RETRY": {
+      "state": "closed",
+      "failure_count": 0,
+      "recovery_timeout": 30.0
+    },
+    "FALLBACK": {
+      "state": "closed",
+      "failure_count": 0,
+      "recovery_timeout": 30.0
+    },
+    "COMPACT": {
+      "state": "closed",
+      "failure_count": 0,
+      "recovery_timeout": 30.0
+    },
+    "DRAIN": {
+      "state": "closed",
+      "failure_count": 0,
+      "recovery_timeout": 30.0
+    },
+    "ABORT": {
+      "state": "closed",
+      "failure_count": 0,
+      "recovery_timeout": 30.0
+    },
+    "FLUSH": {
+      "state": "closed",
+      "failure_count": 0,
+      "recovery_timeout": 30.0
+    }
+  }
+}
